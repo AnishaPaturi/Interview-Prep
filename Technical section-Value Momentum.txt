@@ -1,0 +1,254 @@
+1: What is the time, space complexity of following code:
+      int a = 0, b = 0;
+      for (i = 0; i < N; i++) {
+        a = a + rand();
+      }
+      for (j = 0; j < M; j++) {
+        b = b + rand();
+      }
+A. O(N * M) time, O(N + M) space
+B. O(N * M) time, O(1) space
+C. O(N + M) time, O(1) space
+D. O(N + M) time, O(N + M) space
+
+2: One of elements of a structure can be a pointer to the same structure.
+A. TRUE
+B. FALSE
+
+3: #include <stdio.h>
+     int main()
+     {
+       char* p = "mayhem";
+       char c;
+       int i;
+       for (i = 0; i < 3; i++)
+         c = *p++;
+     }
+     printf("%c", c);
+     return 0;
+     }
+A. a
+B. ex
+C. y
+D. h
+
+4: Which of the following cannot be checked in a switch-case statement?
+A. enum
+B. Float
+C. Integer
+D. Character
+
+5: How will you free the memory allocated by the following program?
+#include<stdio.h> #include<stdlib.h> #define MAXROW 3 #define MAXCOL 4int main(){ int **p, i, j; p = (int **) malloc(MAXROW * sizeof(int *)); return 0;}
+A. memfree(int p);
+B. dealloc(p);
+C. malloc(p, 0);
+D. free(p);
+
+6: struct
+     {
+       int si;
+       double d;
+       float cp;
+     } s;
+     void
+     main ()
+     {
+       printf ("%d, %d, %d", sizeof (s.si), sizeof (s.d), sizeof (s.cp));
+     }
+A. 6, 10, 8
+B. 2, 4, 4
+C. 4, 8, 4
+D. 2, 8, 8
+
+7: What is the time complexity for converting decimal to binary numbers?
+A. O(1)
+B. O(logn)
+C. O(nlogn)
+D. O(n)
+
+8: The process of defining a method in subclass having same name & type signature as a method in its superclass is known as?
+A. Method overloading
+B. None of the mentioned
+C. Method hiding
+D. Method overriding
+
+9: Choose the application option for the following program?
+     #include <stdio.h>
+     main()
+     {
+       int *p, **q;
+       printf("%u\n", sizeof(p));
+       printf("%u\n", sizeof(q));
+     }
+A. First printf() prints the value less than the second.
+B. Both the printf() will print the same value
+C. Second printf() prints the value less than the first.
+D. Error in the code.
+
+10: What is the worst-case run-time complexity of binary search algorithm?
+A. O(nlog n)
+B. O(n3)
+C. O(n2)
+D. O(n)
+
+11: Accessing free list very frequently for wide range of addresses can lead to
+A. segmentation fault
+B. memory errors
+C. cache problems
+D. paging
+
+12: Here are a couple of related class declarations (implementations omitted).
+
+class Base {
+  public:
+    Base();
+    ~Base();
+    void f(int k);
+    void f(double x[]);
+    int g(double y);
+};
+
+class Extended: public Base {
+  Extended();
+  ~Extended();
+  void f(int w);
+  int g(double v[ ]);
+};
+
+What is the relationship between the declaration of function f in class Extended 
+and the declarations of f in class Base?
+
+
+A. Extended::f overrides only Base::f(int k)
+B. Extended::f overloads both definitions of f in Base
+C. This program will not compile because there is only one definition of f in 
+   Extended; to fix the problem, Extended would need to contain both a definition 
+   of f with an int parameter and a second definition of f with a double array parameter.
+D. Extended::f overrides both definitions of f in Base
+E. Extended::f overloads only Base::f(int k)
+
+
+13: What is the maximum number of possible nonzero values in an adjacency matrix of a simple graph with n vertices?
+A. (n*(n+1))/2
+B. n*(n+1)
+C. n*(n-1)
+D. (n*(n-1))/2
+
+14: Which of the following functions are performed by a constructor?
+A. Construct a new function
+B. Construct a new class
+C. Construct a new object
+D. Initialize objects
+
+15: int main ()
+      {
+        int a[4] = { 25, 16 };
+        printf ("%d %d", a[0] & a[1], a[1] | a[2]);
+      }
+A. 16 16
+B. Syntax error because of invalid operator symbol
+C. Syntax error because of invalid array initialization
+D. 25 16
+
+16: Here is a binary tree.
+      1
+      /\
+      2 6
+      /\/\
+      4 9 3 7
+      /\
+      8 5
+      
+If we visit the nodes of this tree using a preorder traversal, in what order will the nodes be visited?
+A. 1 2 4 9 6 3 8 5 7
+B. 1 2 6 4 9 3 7 8 5
+C. 4 2 9 1 8 3 5 6 7
+D. 4 9 2 8 5 3 7 6 1
+E. 1 2 3 4 5 6 7 8 9
+
+17: set of programs which consist of full set of documentations is termed as
+A. bus packages
+B. software paskages
+C. file packages
+D. database packages
+
+
+18: which of the following statement is correct
+A. object is an instance of data type.
+B. class is an instance of object.
+C. class is an instance of data type.
+D. object is an instance of a class.
+
+19: Which of the following correctly describes overloading of functions?
+A. Pseudo polymorphism
+B. Transient polymorphism
+C. Virtual polymorphism
+D. Ad-hoc polymorphism
+
+20: Which of the following concept of oops allows compiler to insert arguments in a function call if it is not specified?
+A. Call by pointer
+B. Default arguments
+C. Call by value
+D. Call by reference
+
+21: In the analysis of algorithms, what plays an important role?
+A. None of the above
+B. Time
+C. Growth factor
+D. Text Analysis
+
+22: The property of binary tree is
+A. The first subset is called left subtree
+B. The second subtree is called right subtree
+C. The root cannot contain NULL
+D. The right subtree can be empty
+
+23: Stack is also called as
+A. Last in first out
+B. Last in last out
+C. First in last out
+D. First in first out
+
+24: What happens if the base and derived class contains definition of a function with same prototype?
+A. Compiler reports an error on compilation.
+B. Only derived class function will get called irrespective of object.
+C. Base class object will call base class function and derived class object will call derived class function.
+D. Only base class function will get called irrespective of object.
+
+25: What is the postfix representation of this expression? (12 - a) * (b + 9) / (d * 4)
+A. 12 a - b 9 + * d 4 * /
+B. 4 b * d 9 + a 12 - * /
+C. None of the above
+D. 12 - a * b + 9 / d * 4
+E. / 12 a - b 9 + d 4 *
+
+26: Which of the following is correct about function overloading?
+A. The order of argument is different.
+B. The types of arguments are different.
+C. The number of arguments is same.
+D. Both A and B.
+
+27: A connected planar graph having 6 vertices, 7 edges contains _____ regions.
+A. 3
+B. 1
+C. 15
+D. 11
+
+28: Which among the following provides a Key-Value storage structure?
+A. Array
+B. Dictionary
+C. Stack
+D. List
+
+29: What is the best case and wortcase complexity of ordered linear search?
+A. O(logn), O(nlogn)
+B. O(1), O(n)
+C. O(nlogn), O(logn)
+D. O(n), O(1)
+
+30: What does it mean when we say that an algorithm X is asymptotically more efficient than Y?
+A. X will always be a better choice for large inputs
+B. X will always be a better choice for all inputs
+C. Y will always be a better choice for small inputs
+D. X will always be a better choice for small inputs
