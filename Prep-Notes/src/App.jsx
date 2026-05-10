@@ -3485,3 +3485,5 @@ export default function CSNotes() {
     </div>
   );
 }
+
+// To run this code, create a new React app (e.g. with Create React App), replace the contents of App.jsx with the above code, and add the following to index.css for the icons:
